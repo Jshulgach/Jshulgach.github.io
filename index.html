@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>
+  Ariel K. Feldman
+</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Ariel K. Feldman">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script src='https://kit.fontawesome.com/a076d05399.js'>
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="css/socialmedia.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="shortcut icon" href="#">
+<link rel="stylesheet" href="css/swiper.min.css">
+
+<!-- MAIN CSS -->
+<script src="js/swiper.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+h6 {
+  text-shadow: 1px 1px 1px #000000;
+  font-size: large;
+}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.maroon { color:rgb(204,0,43); }
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/images/windowPrototyping.png');
+  min-height: 100%;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Container holding the image and the text */
+.fullcontainer {
+  position: relative;
+  text-align: left;
+  color: black;
+  width: 66%;
+  height: 100%;
+  overflow: hidden;
+}
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+footer {
+  display: block;
+  float: center;
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-large w3-padding" 
+style="background-color:rgb(204,0,43);z-index:3;width:300px;font-weight:bold;"
+id="mySidebar">
+  <br>
+  <a href="javascript:void(0)" onclick="w3_close()" 
+  class="w3-button w3-hide-large w3-display-topleft" 
+  style="width:100%;font-size:22px">
+    Close Menu
+  </a>
+  <div class="w3-container">
+    <h3 class="w3-padding-32 w3-text-white">
+      <b>
+        Ariel K.
+        <br>
+        Feldman
+      </b>
+    </h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-text-white
+    w3-button w3-hover-white">
+      About Me
+    </a> 
+    <a href="#media" onclick="w3_close()" class="w3-bar-item w3-text-white
+    w3-button w3-hover-white">
+      Media
+    </a>
+    <a href="#research" onclick="w3_close()" class="w3-bar-item w3-text-white
+    w3-button w3-hover-white">
+      Research
+    </a> 
+    <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-text-white
+    w3-button w3-hover-white">
+      Teaching
+    </a> 
+    <a href="#resources" onclick="w3_close()" class="w3-bar-item w3-text-white
+    w3-button w3-hover-white">
+      Resources
+    </a> 
+    <a href="/REL/RelpReviews/index.html" onclick="w3_close()" 
+    class="w3-bar-item w3-text-white w3-button w3-hover-white">
+      Relp Reviews
+    </a> 
+    <a href="/REL/CV/index.html" onclick="w3_close()" class="w3-bar-item
+    w3-text-white w3-button w3-hover-white">
+      CV
+    </a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-text-white
+    w3-button w3-hover-white">
+      Contact
+    </a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding"
+style="background-color:rgb(204,0,43)">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right"
+  style="background-color:rgb(204,0,43)" onclick="w3_open()">
+    ☰
+  </a>
+  <span>
+    Ariel K. Feldman
+  </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer"
+title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="about">
+    <h1 class="w3-xxxlarge maroon">
+      <b>
+        About Me.
+      </b>
+    </h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+  </div>
+  
+  <!-- About REL -->
+  <div class="w3-row-padding">
+    <div class="w3-third">
+        <video loop controls="controls" width="100%" height="100%" name="Brain Ball">
+          <source src="images/tossBrainStressBall.mp4">
+        </video>
+    </div>
+
+    <!-- <div class="w3-two-thirds" font-size="10vw"> -->
+    <div class="fullcontainer">
+        I am a PhD Candidate in Neural Computation at Carnegie Mellon University
+        interested in using electrophysiology and information theory to explore
+        the neural circuitry underlying how we represent our environment and 
+        ourselves within it.
+        <!-- I am also involved in the design and fabrication of
+        devices to record and modulate neural activity <i>in vivo</i>.  -->
+        Currently, I'm jointly advised by
+        <a style="color: rgb(204,0,43);" href="https://users.ece.cmu.edu/~pgrover/">
+          Dr. Pulkit Grover</a> and <a style="color: rgb(204,0,43);" 
+          href="https://www.meche.engineering.cmu.edu/directory/bios/weber-douglas.html">
+          Dr. Doug Weber</a>. During my undergraduate education, I was lucky 
+          enough to work under the supervision of 
+        <a style="color: rgb(204,0,43);" href="https://profiles.rice.edu/faculty/caleb-kemere">
+          Dr. Caleb Kemere</a> 
+        in the
+        <a style="color: rgb(204,0,43);" href="https://rnel.rice.edu/">
+          Realtime Neural Engineering Lab (RNEL)</a> 
+        at Rice University. To read more about my research, both past and 
+        present, head over to my research page or check out the videos below!
+      <br>
+
+        Believe it or not, I like to do other things outside of research. Lil
+        REL grew up with a ranch in Montana, and so I'm a big fan of being 
+        outside (even in those dreaded Houston summers). I practiced Taekwondo
+        very seriously, to the point where I had several national and 
+        international titles by high school, but switched to teaching after a
+        swivel chair shattered my Olympic dreams. Languages fascinate me, and 
+        I'm always looking to practice what I know or learn something new. A few
+        more interests of note include salsa dancing, rodeo riding and pie 
+        eating, in no particular order...
+    </div>
+  </div>
+  <div class="w3-row w3-center w3-padding-16 w3-section w3-text-white"
+  style="background-color: rgb(204,0,43);">
+    <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">
+          7
+        </span>
+        <br>
+        Labs Worked With
+    </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">
+      4
+    </span>
+    <br>
+    Oral Presentations
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">
+      4
+    </span>
+    <br>
+    Conference Posters
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">
+      4
+    </span>
+    <br>
+    Classes TA'd
+  </div>
+</div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0"
+  onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">
+      ×
+    </span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent
+    w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Media -->
+  <div class="w3-container" id="media" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon">
+      <b>
+        Media.
+      </b>
+    </h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+      <div class="container-fluid">
+           <div class="row">
+
+                <div class="col-lg-12 col-12">
+                     <div class="owl-carousel owl-theme" id="project-slide">
+                      <div class="item project-wrapper" data-aos="fade-up">
+                        <iframe display="block" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://www.youtube.com/embed/cZiEGImlv8k?t=146">
+                        </iframe>
+                        <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                             <a href="https://www.youtube.com/embed/cZiEGImlv8k?t=146" title="CMU GO Show" target="_blank" style="color: #cccccc; text-decoration: none;">
+                                  CMU Gelfand Center GO STEM Show
+                             </a>
+                        </div>
+                   </div>
+
+                          <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                               <iframe display="block" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://www.youtube.com/embed/wJUtF9alpfo">
+                               </iframe>
+                               <br>
+                               <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                    <a href="https://www.youtube.com/embed/wJUtF9alpfo" title="Rice Natural Sciences Spotlight" target="_blank" style="color: #cccccc; text-decoration: none;">
+                                         Rice School of Natural Sciences Student Spotlight
+                                    </a>
+                               </div>
+                          </div>
+
+                          <div class="item project-wrapper" data-aos="fade-up" data-aos-delay="100">
+                            <iframe display="block" width="100%" height="300" scrolling="no" frameborder="no" src="https://www.cmu.edu/news/stories/archives/2021/november/images/josselyn-carnegie-prize-700-min.jpeg">
+                            </iframe>
+                            <br>
+                            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                                 <a href="https://www.cmu.edu/news/stories/archives/2021/november/josselyn-carnegie-prize.html" title="Rice Natural Sciences Spotlight" target="_blank" style="color: #cccccc; text-decoration: none;">
+                                      Carnegie Prize in Mind and Brain Sciences
+                                 </a>
+                            </div>
+                       </div>
+
+                     </div>
+                </div>
+           </div>
+      </div>
+
+  <!-- Research -->
+  <div class="w3-container" id="research" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon">
+      <b>
+        Research.
+      </b>
+    </h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>
+      During my undergraduate career, I have found enjoyment in the intersection
+      of the fields of engineering and neuroscience, the former of which I’d had
+      little to no exposure to until coming to Rice. However, I have become
+      deeply interested in how an engineering background enables me to further
+      probe and interact with the brain, ultimately allowing for more innovative
+      methods of decoding neural activity. In the Kemere Lab, I was working to
+      understand the role of the hippocampus in both spatial navigation (see
+      RELevator) and learning/memory (check out Shark-Wave). In my graduate and
+      post-graduate careers, however, I would like to move more towards working
+      on decoding the underlying neural activity of memory and consciousness,
+      ideally to the point of understanding where replication through computer
+      simulations becomes feasible.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-center w3-light-grey">
+        <li class="w3-xlarge w3-padding-32 w3-text-white" 
+        style="background-color: rgb(0, 32, 91);">
+          Undergrad: Rice University
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Undergrad/MagReward/">
+            Magnetoelectric Films
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Undergrad/SharkWave/">
+            Sharp Wave Ripples
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Undergrad/CornellNeuroNex/">
+            Cornell NeuroNex
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Undergrad/AnimalTracking/">
+            Animal Tracking
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Undergrad/RELevator/">
+            RELevator
+          </a>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-center w3-light-grey">
+        <li class="w3-xlarge w3-padding-32 w3-text-white"
+        style="background-color: rgb(204,0,43);">
+          Grad: Carnegie Mellon
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Grad/GridCellInfo/">
+          Grid Cell Information Content
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Grad/SCSDecoding/">
+          EMG Decoding for SCS Control
+          </a>
+        </li>
+        <li class="w3-padding-16">
+          <a href ="Research/Grad/Proprioception/">
+          Proprioception in SEEG Patients
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Teaching -->
+  <div class="w3-container" id="teaching" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon">
+      <b>
+        Teaching.
+      </b>
+    </h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>
+      When I got to Rice University, I realized I had nothing figured out.
+      Classes were hard, I had no clue what my career path would look like
+      &mdash; the impact my mentors and TAs had on me were incredibly powerful 
+      in those early years. I strive to help students navigating their early
+      years of research or a new academic field, and come to love the field as I
+      do.
+    </p>
+    <p>
+      <b>
+        My experience is as follows
+      </b>
+      :
+    </p>
+  </div>
+
+  <!-- My Experience -->
+  <div class="w3-row-padding">
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/IOTBackground.png" alt="Course Development" 
+        style="width:100%;">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">
+            Course Development
+          </h3>
+          <p style="color: rgb(77, 77, 77);">
+            Rice Center for Engineering Leadership's IOT with 
+            Machine Learning & Python
+          </p>
+          <p>Teaching high school students how to utilize realtime sensor data,
+            along with the immense data available online, to create predicitive
+            unsupervised machine learning algorithms and utilizing JSON/HTTP.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/Teaching/images/treasure.jpg" alt="Academic Fellow"
+        style="width:100%;">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">
+            Academic Fellow
+          </h3>
+          <p style="color: rgb(77, 77, 77);">
+            Computer Science, Neuroscience, Research & Writing
+          </p>
+          <p>
+            Academic Fellowships at Rice University aim to identify students
+            who perform exceptionally in a certain course, major or field that
+            may be able to provide free, on-call academic aid to students who
+            reside in their residential colleges.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/whiteboard1.jpg" alt="Teaching Assistant"
+        style="width:100%">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">
+            Teaching Assistant
+          </h3>
+          <p style="color: rgb(77, 77, 77); white-space: pre;">COMP 140
+NEUR/BIOC 385
+ELEC 220</p>
+          <p>
+            Teaching assistants are selected by professors on the basis of past
+            class performance, understanding of material and willingness to help
+            others via grading and weekly office hours, as well as exam review
+            sessions. This is more specific than a Fellow.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m6 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/images/rel&nikhil.JPG" alt="Mentorship" style="width:100%">
+        <div class="w3-container">
+          <h3 style="color: rgb(204,0,43);">
+            Mentorship
+          </h3>
+          <p style="color: rgb(77, 77, 77);white-space: pre;">Elisabeth Torres-Schulte
+Eugene Kim
+Lily Xie</p>
+            <p>
+              As a newbie in academia, I needed a lot of help getting on my feet and
+              figuring out how the system works. I try and pass that knowledge onto my
+              undergrads, check them out 
+              <a style="color: rgb(204,0,43);" 
+              href="https://arielfeldman.github.io/Teaching/Mentorship/">
+                here
+              </a>
+              to see some awesome future neuroscientists!
+            </p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resources -->
+  <div class="w3-container" id="resources" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon">
+      <b>
+        Resources.
+      </b>
+    </h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>
+      Below, I have included some notes and course resources I've put together
+      for classes I have TA'd and Fellowed for at Rice University.
+    </p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="container">
+        <a href="/supplementary-guide-fundamentals.pdf">
+          <img class="w3-hover-opacity" src="/images/neurons1.png" 
+          alt="NEUR 385/585" style="width:100%; transform: rotate(180deg);">
+          <div class="centered w3-large">
+            <h6>
+              NEUR 385/585
+            </h6>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="container">
+        <a href="/supplementary-guide-computational.pdf">
+          <img class="w3-hover-opacity" src="/images/2.png" alt="COMP 140" 
+          style="width:100%; background-color: rgb(189, 186, 186);">
+          <div class="centered w3-large">
+            <h6>
+              COMP 140
+            </h6>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:40px">
+    <h1 class="w3-xxxlarge maroon">
+      <b>
+        Contact.
+      </b>
+    </h1>
+    <hr style="width:50px;border:5px solid rgb(204,0,43)" class="w3-round">
+    <p>
+      Office hours, research help, pie appointments — you name it. Shoot me a
+      message:
+    </p>
+    <form action="mailto:arielfeldman@cmu.edu" method="post" enctype="text/plain"
+    target="_blank">
+      <div class="w3-section">
+        <label>
+          Name
+        </label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>
+          Email
+        </label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>
+          Message
+        </label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large 
+      w3-text-white w3-margin-bottom" 
+      style="background-color: rgb(204,0,43);">
+        Send Message
+      </button>
+    </form>  
+  </div>
+  <!-- End page content -->
+</div>
+
+<!-- <footer class="w3-container w3-padding-32" style="margin-top: 32px; background-color: rgb(204,0,43);">  
+  <div class="w3-xlarge w3-center w3-padding-32 w3-text-white" style="margin-left:340px;margin-right:40px">
+    <ul class="social-icon">
+      <li>
+        <a href="https://www.github.com/arielfeldman/">
+          <i class="fa fa-github w3-hover-opacity">  
+
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/Rice-Neuroengineering-Initiative-100413027999310/">
+          <i class="fa fa-facebook-official w3-hover-opacity">  
+
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/neurelengineering/">  
+          <i class="fa fa-instagram w3-hover-opacity">
+
+          </i>
+        </a>
+      </li>
+      <li><a href="https://twitter.com/neuRELengineer">
+        <i class="fa fa-twitter w3-hover-opacity">
+
+        </i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/in/arielfeldman/">
+        <i class="fa fa-linkedin w3-hover-opacity">
+
+        </i>
+      </a>
+    </li>
+    </ul>
+  </div>
+</footer> -->
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+<!-- SCRIPTS -->
+<script src="js/jquery.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/aos.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+<!-- Initialize Swiper -->
+<script>
+     var swiper = new Swiper('.swiper-container', {
+       effect: 'coverflow',
+       grabCursor: true,
+       centeredSlides: true,
+       slidesPerView: 'auto',
+       coverflowEffect: {
+         rotate: 50,
+         stretch: 0,
+         depth: 100,
+         modifier: 1,
+         slideShadows : true,
+       },
+       pagination: {
+         el: '.swiper-pagination',
+       },
+     });
+   </script>
+</body>
+</html>
