@@ -1,0 +1,128 @@
+# =====================================================================
+# Site Settings - Jonathan Shulgach Personal Website
+# =====================================================================
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "dark"  # Options: "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Metadata
+locale: "en-US"
+title: "Jonathan Shulgach"
+title_separator: "|"
+subtitle: "PhD Student • Roboticist • STEM Educator"
+name: "Jonathan Shulgach"
+description: "Personal website of Jonathan Shulgach - PhD student at Carnegie Mellon University specializing in flexible electronics, wearable EMG sensing, and human-machine interfaces for assistive robotics."
+url: "https://jshulgach.github.io"
+baseurl: ""
+repository: "Jshulgach/Jshulgach.github.io"
+
+# Site Author - Shows in sidebar
+author:
+  name: "Jonathan Shulgach"
+  avatar: "/assets/img/jonathan-shulgach-photo.jpg"
+  bio: "Building the future of human-machine symbiosis, one electrode at a time. ⚡🦾"
+  location: "Pittsburgh, PA"
+  email: "jshulgac@andrew.cmu.edu"
+  links:
+    - label: "CV/Resume"
+      icon: "fas fa-fw fa-file-pdf"
+      url: "/assets/docs/Jonathan-Shulgach-CV.pdf"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Jshulgach"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=l8-z7Z4AAAAJ"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jonathanshulgach"
+    - label: "IMDB"
+      icon: "fab fa-fw fa-imdb"
+      url: "https://www.imdb.com/name/nm5809471/"
+
+# Reading Files
+include:
+  - _pages
+  - _projects
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# Defaults
+defaults:
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  # _projects
+  - scope:
+      path: "_projects"
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: true
+      classes: wide
+  # _posts (if you add blog later)
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 5
+paginate_path: /page:num/
+timezone: America/New_York
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-include-cache
+  - jekyll-seo-tag
+
+# Disable feed link in footer
+atom_feed:
+  hide: true
+
+# Analytics (Optional - uncomment and add your ID)
+# analytics:
+#   provider: "google-gtag"
+#   google:
+#     tracking_id: "UA-XXXXXXXX-X"
+
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/Jshulgach"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=YOUR_ID"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/jonathanshulgach"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md
+  - LICENSE

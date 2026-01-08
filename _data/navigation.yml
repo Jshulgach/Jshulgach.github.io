@@ -1,0 +1,16 @@
+# Navigation menu configuration
+# This file defines the main navigation links shown in the site header
+
+main:
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Blog"
+    url: /blog/
+  - title: "Publications"
+    url: /publications/
+  - title: "Creative"
+    url: /creative/
+  - title: "Outreach"
+    url: /outreach/

@@ -1,0 +1,345 @@
+---
+# Front matter required for Jekyll to process SCSS
+---
+
+@charset "utf-8";
+
+/* ============================================
+   Custom Variables - Override before importing theme
+   ============================================ */
+
+/* Color Palette - Professional Dark Theme */
+$background-color: #0d1117 !default;
+$primary-color: #58a6ff !default;
+$secondary-color: #8b949e !default;
+$text-color: #c9d1d9 !default;
+$link-color: #58a6ff !default;
+$link-color-hover: #79c0ff !default;
+$code-background-color: #161b22 !default;
+$border-color: #30363d !default;
+$footer-background-color: #010409 !default;
+$masthead-link-color: #c9d1d9 !default;
+$masthead-link-color-hover: #58a6ff !default;
+$success-color: #238636 !default;
+$info-color: #1f6feb !default;
+$warning-color: #d29922 !default;
+$danger-color: #f85149 !default;
+
+@import "minimal-mistakes/skins/dark";
+@import "minimal-mistakes";
+@import "custom";
+
+/* ============================================
+   Animations
+   ============================================ */
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ============================================
+   Hero Section - Fixed Layout
+   ============================================ */
+
+.page__hero--overlay {
+  padding: 8em 0 6em !important;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%) !important;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(88, 166, 255, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, rgba(136, 87, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .wrapper {
+    position: relative;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .page__title {
+    font-size: 3em !important;
+    font-weight: 800;
+    margin-bottom: 0.5em;
+    color: #fff !important;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+  
+  .page__lead {
+    font-size: 1.4em !important;
+    max-width: 700px;
+    margin: 0 auto 2em;
+    line-height: 1.8;
+    color: rgba(255,255,255,0.9) !important;
+  }
+}
+
+.page__hero--overlay .btn {
+  margin: 0.5em;
+  padding: 1em 2em;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(88, 166, 255, 0.3);
+  }
+}
+
+/* ============================================
+   Feature Row - Fixed Cards
+   ============================================ */
+
+.feature__wrapper {
+  margin: 3em 0;
+}
+
+.feature__item {
+  margin-bottom: 2.5em;
+  animation: fadeInUp 0.8s ease-out both;
+  
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.2s; }
+  &:nth-child(3) { animation-delay: 0.3s; }
+  
+  .archive__item {
+    background: linear-gradient(145deg, #161b22 0%, #0d1117 100%);
+    border: 1px solid $border-color;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%;
+    
+    &:hover {
+      transform: translateY(-8px);
+      border-color: $primary-color;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+  }
+  
+  .archive__item-teaser {
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    max-height: 200px;
+    
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  }
+  
+  .archive__item-body {
+    padding: 1.5em !important;
+  }
+  
+  .archive__item-title {
+    color: #fff !important;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    margin-top: 0 !important;
+  }
+  
+  .archive__item-excerpt {
+    color: $secondary-color;
+    font-size: 0.95em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+  }
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.8em 1.5em;
+  transition: all 0.3s ease;
+  border: none;
+  
+  &--primary {
+    background: linear-gradient(135deg, #58a6ff 0%, #1f6feb 100%);
+    color: #fff !important;
+    
+    &:hover {
+      background: linear-gradient(135deg, #79c0ff 0%, #388bfd 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(88, 166, 255, 0.35);
+    }
+  }
+  
+  &--info {
+    background: linear-gradient(135deg, #8957e5 0%, #6e40c9 100%);
+    color: #fff !important;
+  }
+  
+  &--success {
+    background: linear-gradient(135deg, #3fb950 0%, #238636 100%);
+    color: #fff !important;
+  }
+  
+  &--large {
+    padding: 1em 2.5em;
+    font-size: 1.1em;
+  }
+}
+
+/* ============================================
+   Navigation
+   ============================================ */
+
+.masthead {
+  background: rgba(13, 17, 23, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid $border-color;
+}
+
+.greedy-nav {
+  background: transparent !important;
+  
+  a {
+    color: $text-color !important;
+    transition: color 0.3s ease;
+    
+    &:hover { color: $primary-color !important; }
+  }
+  
+  .visible-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: $primary-color;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+  }
+  
+  .visible-links a:hover::after { width: 80%; }
+}
+
+/* ============================================
+   Author Sidebar
+   ============================================ */
+
+.author__avatar img {
+  border-radius: 50%;
+  border: 4px solid $primary-color;
+  transition: all 0.4s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(88, 166, 255, 0.4);
+  }
+}
+
+.author__name { color: #fff; font-weight: 700; }
+.author__bio { color: $secondary-color; font-style: italic; }
+
+/* ============================================
+   Page Content
+   ============================================ */
+
+.page__content {
+  animation: fadeIn 0.8s ease-out;
+  
+  h1, h2, h3, h4 { color: #fff; font-weight: 700; }
+  h2 { padding-bottom: 0.5em; border-bottom: 2px solid $border-color; }
+  
+  a:not(.btn) {
+    color: $primary-color;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+    &:hover { border-bottom-color: $primary-color; }
+  }
+}
+
+/* ============================================
+   Notice Boxes
+   ============================================ */
+
+.notice--info {
+  background: rgba(31, 111, 235, 0.15) !important;
+  border-left: 4px solid $info-color;
+  border-radius: 12px;
+  padding: 1.5em;
+}
+
+.notice--success {
+  background: rgba(35, 134, 54, 0.15) !important;
+  border-left: 4px solid $success-color;
+  border-radius: 12px;
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+
+table {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid $border-color;
+  
+  th {
+    background: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
+    color: #fff;
+    padding: 1em;
+  }
+  
+  td { padding: 1em; border-bottom: 1px solid $border-color; }
+  tr:hover { background: rgba(88, 166, 255, 0.05); }
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.page__footer {
+  background: $footer-background-color !important;
+  border-top: 1px solid $border-color;
+}
+
+/* ============================================
+   Responsive
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .page__hero--overlay {
+    padding: 6em 1em 4em !important;
+    .page__title { font-size: 2.2em !important; }
+    .page__lead { font-size: 1.1em !important; }
+  }
+}
+
+@media (max-width: 600px) {
+  .page__hero--overlay {
+    padding: 5em 1em 3em !important;
+    .page__title { font-size: 1.8em !important; }
+    .page__lead { font-size: 1em !important; }
+    .btn { display: block; margin: 0.5em 0; }
+  }
+}

@@ -1,0 +1,349 @@
+/* Custom SCSS overrides for Jonathan Shulgach's personal site */
+/* This file extends the minimal-mistakes dark theme */
+
+/* ============================================
+   Color Variables - Custom Palette
+   ============================================ */
+$primary-color: #1abc9c !default;        /* Teal - matches original site */
+$secondary-color: #2c3e50 !default;      /* Dark blue-gray */
+$background-color: #1a1a2e !default;     /* Deep purple-blue */
+$code-background-color: #16213e !default;
+$link-color: #1abc9c !default;
+$link-color-hover: #16a085 !default;
+$masthead-link-color: #fff !default;
+$footer-background-color: #0f0f1a !default;
+
+/* ============================================
+   Typography Enhancements
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.page__title {
+  color: $primary-color;
+}
+
+/* ============================================
+   Hero/Splash Customization
+   ============================================ */
+.page__hero--overlay {
+  padding: 6em 0 4em;
+  
+  .page__title {
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .page__lead {
+    font-size: 1.25em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================================
+   Feature Row Styling
+   ============================================ */
+.feature__item {
+  .archive__item-teaser {
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+  }
+  
+  .archive__item-title {
+    color: $primary-color;
+  }
+}
+
+/* ============================================
+   Project Cards
+   ============================================ */
+.archive__item {
+  background: rgba(255,255,255,0.02) !important;
+  border-radius: 10px !important;
+  padding: 1em !important;
+  transition: all 0.3s ease !important;
+  
+  &:hover {
+    background: rgba(255,255,255,0.05) !important;
+    transform: translateY(-8px) !important;
+    box-shadow: 0 15px 40px rgba(88, 166, 255, 0.5), 0 5px 20px rgba(88, 166, 255, 0.3) !important;
+  }
+}
+
+/* Project grid items with glow */
+.entries-grid .archive__item,
+.grid__item .archive__item {
+  &:hover {
+    box-shadow: 0 15px 40px rgba(88, 166, 255, 0.5), 0 5px 20px rgba(88, 166, 255, 0.3) !important;
+  }
+}
+
+/* ============================================
+   Button Customization
+   ============================================ */
+.btn--primary {
+  background-color: $primary-color;
+  border-color: $primary-color;
+  
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    border-color: darken($primary-color, 10%);
+  }
+}
+
+.btn--info {
+  background-color: #3498db;
+  
+  &:hover {
+    background-color: darken(#3498db, 10%);
+  }
+}
+
+.btn--success {
+  background-color: #27ae60;
+  
+  &:hover {
+    background-color: darken(#27ae60, 10%);
+  }
+}
+
+/* ============================================
+   Author Sidebar
+   ============================================ */
+.author__avatar {
+  img {
+    border-radius: 50%;
+    border: 3px solid $primary-color;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.author__bio {
+  font-style: italic;
+  color: rgba(255,255,255,0.8);
+}
+
+/* ============================================
+   Notice Boxes
+   ============================================ */
+.notice--info {
+  background-color: rgba(52, 152, 219, 0.2);
+  border-left: 4px solid #3498db;
+}
+
+.notice--success {
+  background-color: rgba(39, 174, 96, 0.2);
+  border-left: 4px solid #27ae60;
+}
+
+/* ============================================
+   Code Blocks
+   ============================================ */
+div.highlighter-rouge,
+figure.highlight {
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ============================================
+   Tables
+   ============================================ */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  
+  th {
+    background-color: $primary-color;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.02);
+  }
+}
+
+/* ============================================
+   Social Icons Animation (Footer & Sidebar)
+   ============================================ */
+.social-icons a,
+.author__urls a {
+  position: relative;
+  transition: transform 0.2s ease, color 0.2s ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      transparent 0deg,
+      #1e10c5 60deg,
+      #9089e2 120deg,
+      #ffffff 180deg,
+      #0e2dcb 240deg,
+      #4743ef 300deg,
+      transparent 360deg
+    );
+    opacity: 0;
+    z-index: -1;
+    animation: icon-rotate 3s linear infinite paused;
+    filter: blur(8px);
+  }
+  
+  &:hover {
+    transform: scale(1.3);
+    color: #f0c14b !important;
+    text-shadow: 0 0 15px rgba(240, 193, 75, 0.8);
+    
+    &::before {
+      opacity: 0.7;
+      animation-play-state: running;
+    }
+  }
+}
+
+@keyframes icon-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* ============================================
+   Footer Styling
+   ============================================ */
+.page__footer {
+  background-color: $footer-background-color;
+  
+  a {
+    color: rgba(255,255,255,0.7);
+    
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+/* ============================================
+   TOC (Table of Contents)
+   ============================================ */
+.toc {
+  background-color: rgba(255,255,255,0.02);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  
+  .nav__title {
+    background-color: $primary-color;
+    border-radius: 8px 8px 0 0;
+  }
+}
+
+/* ============================================
+   Gallery Styling
+   ============================================ */
+.gallery {
+  .gallery__item {
+    border-radius: 8px;
+    overflow: hidden;
+    
+    img {
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+/* ============================================
+   Responsive Adjustments
+   ============================================ */
+@media (max-width: 768px) {
+  .page__hero--overlay {
+    padding: 4em 1em 2em;
+    
+    .page__title {
+      font-size: 1.8em;
+    }
+    
+    .page__lead {
+      font-size: 1em;
+    }
+  }
+}
+
+/* ============================================
+   Blog Entry Styling
+   ============================================ */
+.blog-entry {
+  padding: 1.5em;
+  margin: 1.5em 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 10px;
+  border-left: 4px solid #58a6ff;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(88, 166, 255, 0.2);
+  }
+  
+  h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+      
+      &:hover {
+        color: #79b8ff;
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  p {
+    color: #8b949e;
+    margin-bottom: 0.5em;
+  }
+  
+  .blog-date {
+    font-size: 0.85em;
+    color: #6e7681;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .blog-tags {
+    font-size: 0.9em;
+    color: #58a6ff;
+    margin-top: 1em;
+    
+    i {
+      margin-right: 0.3em;
+    }
+  }
+}
