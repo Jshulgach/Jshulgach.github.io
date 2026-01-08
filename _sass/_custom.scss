@@ -43,22 +43,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
-   Feature Row Styling - 4 columns
+   Feature Row Styling - 2x2 grid
    ============================================ */
 .feature__wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5em;
+  gap: 2em;
   
   .feature__item {
-    flex: 0 0 calc(25% - 1.5em);
-    max-width: calc(25% - 1.5em);
-    
-    @media (max-width: 1024px) {
-      flex: 0 0 calc(50% - 1em);
-      max-width: calc(50% - 1em);
-    }
+    flex: 0 0 calc(50% - 2em);
+    max-width: calc(50% - 2em);
     
     @media (max-width: 600px) {
       flex: 0 0 100%;
@@ -81,11 +76,11 @@ h1, h2, h3, h4, h5, h6 {
   
   .archive__item-title {
     color: $primary-color;
-    font-size: 1em;
+    font-size: 1.1em;
   }
   
   .archive__item-excerpt {
-    font-size: 0.85em;
+    font-size: 0.95em;
   }
 }
 
