@@ -36,7 +36,7 @@ author:
       url: "https://scholar.google.com/citations?user=l8-z7Z4AAAAJ"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jonathanshulgach"
+      url: "https://www.linkedin.com/in/jonathan-shulgach/"
     - label: "IMDB"
       icon: "fab fa-fw fa-imdb"
       url: "https://www.imdb.com/name/nm5809471/"
@@ -115,7 +115,7 @@ footer:
       url: "https://scholar.google.com/citations?user=YOUR_ID"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/jonathanshulgach"
+      url: "https://www.linkedin.com/in/jonathan-shulgach/"
 
 # Exclude from processing
 exclude:
