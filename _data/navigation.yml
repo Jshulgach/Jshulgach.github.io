@@ -6,10 +6,12 @@ main:
     url: /about/
   - title: "Projects"
     url: /projects/
-  - title: "Blog"
-    url: /blog/
   - title: "Publications"
     url: /publications/
+  - title: "CV/Resume"
+    url: /assets/docs/Jonathan-Shulgach-CV.pdf
+  - title: "Blog"
+    url: /blog/
   - title: "Creative"
     url: /creative/
   - title: "Outreach"

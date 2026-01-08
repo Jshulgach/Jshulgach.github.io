@@ -10,16 +10,18 @@ header:
       url: "/projects/"
     - label: "<i class='fas fa-user'></i> About Me"
       url: "/about/"
-    - label: "<i class='fas fa-book'></i> Publications"
-      url: "/publications/"
+    - label: "<i class='fas fa-file-pdf'></i> CV/Resume"
+      url: "/assets/docs/Jonathan-Shulgach-CV.pdf"
 excerpt: >
-  <div style="text-align: center;">
-  <img src="/assets/img/jonathan-shulgach-photo.jpg" alt="Jonathan Shulgach" style="width: 200px; height: 200px; border-radius: 50%; border: 3px solid #58a6ff; margin-bottom: 1em; object-fit: cover;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 2em; flex-wrap: wrap;">
+  <img src="/assets/img/jonathan-shulgach-photo.jpg" alt="Jonathan Shulgach" style="width: 280px; height: 280px; border-radius: 50%; border: 4px solid #58a6ff; object-fit: cover; box-shadow: 0 10px 40px rgba(88, 166, 255, 0.3);">
+  <div style="text-align: left; max-width: 500px;">
+  <h1 style="margin: 0; font-size: 2.5em; color: #fff;">Jonathan Shulgach</h1>
+  <p style="font-size: 1.3em; margin: 0.5em 0; color: #8b949e;"><strong>PhD Student</strong> at Carnegie Mellon University</p>
+  <p style="margin: 0.5em 0;">Building the future of <strong>human-machine interfaces</strong> through wearable sensing, flexible electronics, and assistive robotics.</p>
+  <p style="margin-top: 1em;"><small>🇦🇷🇺🇦 First-gen American | Roboticist | STEM Educator</small></p>
   </div>
-  
-  **PhD Student** at Carnegie Mellon University building the future of **human-machine interfaces** 
-  through wearable sensing, flexible electronics, and assistive robotics.<br /><br />
-  <small>🇦🇷🇺🇦 First-gen American | Roboticist | STEM Educator</small>
+  </div>
 
 feature_row:
   - image_path: /assets/img/portfolio/hand-exo.jpg
@@ -43,27 +45,11 @@ feature_row:
     url: "/projects/mini-arm/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
-
-feature_row2:
   - image_path: /assets/img/portfolio/tiny-nml.png
     alt: "TinyNML"
     title: "TinyNML"
     excerpt: "Embedded machine learning on microcontrollers for motion recognition, gesture control, and biosignal processing."
     url: "/projects/tinynml/"
-    btn_class: "btn--primary"
-    btn_label: "Learn More"
-  - image_path: /assets/img/portfolio/Hands.png
-    alt: "Hand Landmark Tracker"
-    title: "Hand Landmark Tracker"
-    excerpt: "MediaPipe hand tracking with Kalman filtering, LSL streaming, and robot control demos."
-    url: "/projects/hand-landmark-tracker/"
-    btn_class: "btn--primary"
-    btn_label: "Learn More"
-  - image_path: /assets/img/portfolio/aruco-track.gif
-    alt: "ArUco Pose Estimation"
-    title: "ArUco Pose Estimation"
-    excerpt: "Toolkit for ArUco marker detection, pose estimation, and custom 3D model tracking in Python."
-    url: "/projects/aruco-pose-estimation/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
 
@@ -79,10 +65,8 @@ intro:
 
 {% include feature_row %}
 
-{% include feature_row id="feature_row2" %}
-
 <div class="text-center" style="margin-top: 2em;">
-  <a href="/projects/" class="btn btn--primary btn--large"><i class="fas fa-th"></i> View All 8 Projects</a>
+  <a href="/projects/" class="btn btn--primary btn--large"><i class="fas fa-th"></i> View All 12 Projects</a>
 </div>
 
 ---

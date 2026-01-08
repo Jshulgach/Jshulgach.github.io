@@ -65,6 +65,19 @@ When I manage to escape the lab, here's what I'm probably doing:
 
 ---
 
+## Honors & Awards 🏆
+
+| Year | Award |
+|------|-------|
+| 2025 | 🏆 CMU Three-Minute Thesis (3MT) Competition – **Finalist** |
+| 2025 | 🎓 CMU Graduate Conference Travel Fellowship |
+| 2022 | 🎤 Northeastern Maryland Technology Council – **Keynote Speaker** |
+| 2021 | 🏅 DARPA Research Contributor Recognition |
+| 2019 | 💡 CMU Design Competition – **Most Innovative Project** ("Flexi-Luminaire") |
+| 2016 | 🎓 UMBC Honors College Graduate |
+
+---
+
 ## Quirky Facts
 
 - ☕ **Coffee consumption**: Approximately 3.2 cups/day (measured with scientific precision)

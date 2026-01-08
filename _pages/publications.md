@@ -88,23 +88,14 @@ classes: wide
 
 ---
 
-## Honors & Awards
-
-| Year | Award |
-|------|-------|
-| 2025 | 🏆 CMU Three-Minute Thesis (3MT) Competition – **Finalist** |
-| 2025 | 🎓 CMU Graduate Conference Travel Fellowship |
-| 2022 | 🎤 Northeastern Maryland Technology Council – **Keynote Speaker** |
-| 2021 | 🏅 DARPA Research Contributor Recognition |
-| 2019 | 💡 CMU Design Competition – **Most Innovative Project** ("Flexi-Luminaire") |
-| 2016 | 🎓 UMBC Honors College Graduate |
-
----
-
 ## Press & Media
 
 - 🎬 [WBALTV: Baltimore Bolts Robotics Team](https://www.wbaltv.com/article/video-baltimore-bolts-looking-for-new-members/12044775)
 - 📰 [CMU Engineering: New Prosthetics Course](https://engineering.cmu.edu/news-events/news/2023/10/06-new-course-prosthetics.html)
+
+<div class="notice--info" markdown="1">
+📋 Looking for **Honors & Awards**? Check out the [About page](/about/#honors--awards-)!
+</div>
 
 ---
 
